@@ -1,7 +1,7 @@
 import React from "react";
 
 function App() {
-  return <div className="text-center text-8xl">JIT GIBI GUBAE</div>;
+  return <div className="text-center text-8xl">JIT GIBI GUBAE APP</div>;
 }
 
 export default App;
