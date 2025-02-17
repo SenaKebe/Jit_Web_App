@@ -1,7 +1,13 @@
 import React from "react";
+import "tailwindcss";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
-  return <div className="text-center text-8xl">JIT GIBI GUBAE APP</div>;
+  return (
+    <div className="">
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
