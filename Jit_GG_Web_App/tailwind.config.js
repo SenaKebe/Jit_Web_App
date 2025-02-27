@@ -1,15 +1,11 @@
-/**@type {import('tailwindcss').config} */
-
-import { plugin } from "postcss";
-
+/** @type {import('tailwindcss').Config} */
 export default {
-  context: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"], // Add this line
   theme: {
     extend: {
       fontFamily: {
         nokia: ["Nokia", "sans-serif"],
       },
-
       colors: {
         primary: "#3967B2",
         secondary: "#F3EC20",

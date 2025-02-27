@@ -36,21 +36,30 @@ const Navbar = () => {
 
         {/*Menu Section*/}
         <div className="hidden lg:block">
-          <ul className="flex items-center gap-5">
+          <ul className="flex items-center gap-5 ">
             {NavbarMenu.map((menu) => (
               <li key={menu.id}>
                 <a
                   href={menu.path}
-                  className="inline-block py-2 px-3 hover:text-secondary"
+                  className="inline-block py-2 px-3 hover:text-amber-300 relative group:"
                 >
-                  {" "}
+                  <div
+                    className="w-2 h-2 bg-amber-300 absolute mt-2 rounded-full left-1/2 -translate-x-1/2 
+                  top-1/2 bottom-0 group-hover:block hidden"
+                  ></div>
+
                   {menu.title}
                 </a>
               </li>
             ))}
+            <button className="primary-btn"> Sign In </button>
           </ul>
         </div>
+
         {/*Mobile Hamburger menu section */}
+        <div className="lg:hidden">
+          <IoMdMenu className="text-4xl" />
+        </div>
       </div>
     </nav>
   );
