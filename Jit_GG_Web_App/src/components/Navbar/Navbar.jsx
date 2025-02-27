@@ -1,6 +1,7 @@
 import React from "react";
 import "tailwindcss";
 import { IoMdMenu } from "react-icons/io";
+import { motion } from "framer-motion";
 
 const NavbarMenu = [
   {
@@ -27,8 +28,12 @@ const NavbarMenu = [
 
 const Navbar = () => {
   return (
-    <nav>
-      <div className="container pl-15 py-10 flex justify-between items-center">
+    <nav className="relative z-20">
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="container pl-15 py-10 flex justify-between items-center"
+      >
         {/*Logo Section*/}
         <div>
           <h1 className="font-bold text-2xl"> Jit Gibi Gubae </h1>
@@ -60,7 +65,7 @@ const Navbar = () => {
         <div className="lg:hidden">
           <IoMdMenu className="text-4xl" />
         </div>
-      </div>
+      </motion.div>
     </nav>
   );
 };
