@@ -48,7 +48,7 @@ const Banner = () => {
                 initial="initial"
                 whileInView={"animate"}
                 viewport={{ once: true }}
-                className="flex items-center gap-4 p-6 bg-blue-500 rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
+                className="flex items-center gap-4 p-6 bg-blue-500 font-bold rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
               >
                 <GiTeacher className="text-amber-400 text-4xl" />
                 <p className="text-2xl text-amber-400"> 10+ መንፈሳዊ ኮርሶች </p>
