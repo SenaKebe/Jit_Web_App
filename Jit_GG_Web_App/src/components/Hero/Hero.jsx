@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="flex flex-col justify-center py-14 md:py-0 relative z-20">
           <div className="text-center md:text-left space-y-10 lg:max-w[400px]">
             <motion.h1
-              variants={FadeUp(4.0)}
+              variants={FadeUp(3.0)}
               initial="initial"
               animate="animate"
               className="text-3xl lg:text-5xl font-bold !leading-snug text-blue-500"
@@ -45,7 +45,7 @@ const Hero = () => {
             </motion.h1>
 
             <motion.div
-              variants={FadeUp(4.5)}
+              variants={FadeUp(3.5)}
               initial="initial"
               animate="animate"
               className="flex justify-center md:justify-start pl-35 py-5"
