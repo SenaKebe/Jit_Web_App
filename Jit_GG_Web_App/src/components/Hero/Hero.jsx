@@ -38,10 +38,9 @@ const Hero = () => {
               variants={FadeUp(3.0)}
               initial="initial"
               animate="animate"
-              className="text-3xl lg:text-5xl font-bold !leading-snug text-blue-500"
+              className="text-3xl lg:text-5xl font-bold !leading-snug text-[#083765]"
             >
-              የጅማ ዩንቨርስቲ ቴክኖሎጂ ኢንስቲትዩት
-              <span className="text-amber-300"> ግቢ ጉባኤ </span>
+              የጅማ ዩንቨርስቲ ቴክኖሎጂ ኢንስቲትዩት ግቢ ጉባኤ
             </motion.h1>
 
             <motion.div

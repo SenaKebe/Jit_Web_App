@@ -31,15 +31,11 @@ const Banner = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-2xl md:text-2xl font-bold text-blue-500 !leading-snug"
+              className="text-2xl md:text-2xl font-bold text-[#083765] !leading-snug"
             >
-              በጅማ ከተማ የጅማ ዩንቨርስቲ ቴክኖሎጂ ኢንስቲትዩት ግቢ ግቢ ጉባኤ የሚገኘው
-              <span className="text-amber-300">
-                {" "}
-                ጅማ ፈለገ ሰላም ቅዱስ ገብርኤል ቤተ ክርስቲያን{" "}
-              </span>{" "}
-              ሲሆን በ ጂአይቲ ግቢ ውስጥ ያሉ ኦርቶዶክሳውያን ተማሪዎችን የእግዚአብሔርን ቃል እንዲማሩ እና
-              እንዲያገለግሉ የሚያደርግ ግቢ ጉባኤ ነው፡፡
+              በጅማ ከተማ የጅማ ዩንቨርስቲ ቴክኖሎጂ ኢንስቲትዩት ግቢ ግቢ ጉባኤ የሚገኘው ጅማ ፈለገ ሰላም ቅዱስ
+              ገብርኤል ቤተ ክርስቲያን ሲሆን በ ጂአይቲ ግቢ ውስጥ ያሉ ኦርቶዶክሳውያን ተማሪዎችን የእግዚአብሔርን ቃል
+              እንዲማሩ እና እንዲያገለግሉ የሚያደርግ ግቢ ጉባኤ ነው፡፡
             </motion.h1>
 
             <div className="flex flex-col gap-6">
@@ -48,10 +44,10 @@ const Banner = () => {
                 initial="initial"
                 whileInView={"animate"}
                 viewport={{ once: true }}
-                className="flex items-center gap-4 p-6 bg-blue-500 font-bold rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
+                className="flex items-center gap-4 p-6 bg-[#083765] font-bold rounded-2xl hover:bg-blue-800 duration-300 hover:shadow-2xl object-cover drop-shadow"
               >
-                <GiTeacher className="text-amber-400 text-4xl" />
-                <p className="text-2xl text-amber-400"> 10+ መንፈሳዊ ኮርሶች </p>
+                <GiTeacher className="text-[#FFFB15] text-4xl" />
+                <p className="text-2xl text-[#FFFB15]"> 10+ መንፈሳዊ ኮርሶች </p>
               </motion.div>
 
               <motion.div
@@ -59,10 +55,10 @@ const Banner = () => {
                 initial="initial"
                 whileInView={"animate"}
                 viewport={{ once: true }}
-                className="flex items-center gap-4 p-6 bg-blue-500 rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
+                className="flex items-center gap-4 p-6 bg-[#083765] rounded-2xl hover:bg-blue-800 duration-300 hover:shadow-2xl object-cover drop-shadow"
               >
-                <MdHomeRepairService className="text-amber-400 text-4xl" />
-                <p className="text-2xl text-amber-400">
+                <MdHomeRepairService className="text-[#FFFB15] text-4xl" />
+                <p className="text-2xl text-[#FFFB15]">
                   {" "}
                   8+ ዋና ዋና የአገልግሎት ክፍሎች{" "}
                 </p>

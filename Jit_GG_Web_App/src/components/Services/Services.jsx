@@ -119,14 +119,14 @@ const Services = () => {
           የምንሰጣቸው አገልግሎቶች
         </h1>
 
-        <div className="pl-15 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-blue-500">
+        <div className="pl-15 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-[#083765]">
           {ServiceData.map((service) => (
             <motion.div
               variants={SlideLeft(service.delay)}
               initial="initial"
               whileInView={"animate"}
               viewport={{ once: true }}
-              className="bg-[#f4f4f4] rounded-2xl flex flex-col gap-4 items-center justify-center p-4 py-7 hover:bg-white hover:scale-110 duration-300 hover:shadow-2xl"
+              className="bg-[#f4f4f4] rounded-2xl flex flex-col gap-4 items-center justify-center p-4 py-7 hover:bg-[#FFFB15] hover:scale-110 duration-300 hover:shadow-2xl"
             >
               <div className="text-4xl mb-4">{service.icon}</div>
               <h1 className="text-lg font-semibold text-center px-3">
