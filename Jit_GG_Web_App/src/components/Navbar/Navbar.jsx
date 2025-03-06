@@ -49,7 +49,7 @@ const Navbar = () => {
                   className="inline-block py-2 px-3 hover:text-[#083765] hover:font-bold hover:bg-[#FFFB15] relative group:"
                 >
                   <div
-                    className="w-2 h-2 bg-[#FFFB15]absolute mt-2 rounded-full left-1/2 -translate-x-1/2 
+                    className="w-2 h-2 bg-[#FFFB15] absolute mt-2 rounded-full left-1/2 -translate-x-1/2 
                   top-1/2 bottom-0 group-hover:block hidden"
                   ></div>
 

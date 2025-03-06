@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const Register = () => {
   return (
-    <section className="">
+    <section>
       <div className="container pl-15 py-1 md:py-24 grid grid-cols-1 md:grid-cols-2 gap 8 space-y-2 md:space-y-0">
         <div className="flex flex-col gap-6 py-40">
           <motion.a
@@ -85,7 +85,7 @@ const Register = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.9, ease: "easeInOut" }}
-                  href="#"
+                  href="https://www.instagram.com/jit_gibi_gubae"
                   className="group"
                 >
                   <AiFillInstagram className="text-6xl text-[#E9683D] group-hover:animate-bounce duration-200" />
@@ -95,7 +95,7 @@ const Register = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.7, ease: "easeInOut" }}
-                  href="#"
+                  href="https://www.tiktok.com/@jit_gibi_gubae"
                   className="group"
                 >
                   <AiFillTikTok className="text-6xl text-black group-hover:animate-bounce duration-200" />

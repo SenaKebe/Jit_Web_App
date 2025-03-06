@@ -6,6 +6,7 @@ import Services from "./components/Services/Services";
 import Banner from "./components/Banner/Banner";
 import Register from "./components/Contact_Us/Contact_Us";
 import Banner2 from "./components/Banner/Banner2";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Banner />
       <Register />
       <Banner2 />
+      <Footer />
     </main>
   );
 }

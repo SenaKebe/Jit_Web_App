@@ -51,7 +51,7 @@ const Hero = () => {
             >
               <button className="primary-btn flex items-center gap-2 group">
                 Get Started
-                <IoIosArrowRoundForward className="text-xl group-hover:translate-x-2 group-hover:-rotate-45 duration-300" />
+                <IoIosArrowRoundForward className="text-2xl font-bold group-hover:translate-x-2 group-hover:-rotate-45 duration-300" />
               </button>
             </motion.div>
           </div>
