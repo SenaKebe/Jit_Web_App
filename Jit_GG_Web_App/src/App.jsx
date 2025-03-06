@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
 import Banner from "./components/Banner/Banner";
 import Register from "./components/Contact_Us/Contact_Us";
+import Banner2 from "./components/Banner/Banner2";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Services />
       <Banner />
       <Register />
+      <Banner2 />
     </main>
   );
 }

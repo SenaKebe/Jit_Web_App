@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const Register = () => {
   return (
-    <section className="bg-[#E7E5E4]">
+    <section className="">
       <div className="container pl-15 py-1 md:py-24 grid grid-cols-1 md:grid-cols-2 gap 8 space-y-2 md:space-y-0">
         <div className="flex flex-col gap-6 py-40">
           <motion.a
@@ -49,7 +49,7 @@ const Register = () => {
             className="flex items-center gap-4 p-6 bg-[#083765] rounded-2xl hover:bg-blue-800 duration-300 hover:shadow-2xl object-cover drop-shadow"
           >
             <FaPhoneAlt className="text-[#FFFB15] text-3xl" />
-            <p className="text-2xl text-[#FFFB15]"> +251900-00-00-00 </p>
+            <p className="text-2xl text-[#FFFB15]"> +251-900-00-00-00 </p>
           </motion.a>
         </div>
 
@@ -88,7 +88,7 @@ const Register = () => {
                   href="#"
                   className="group"
                 >
-                  <AiFillInstagram className="text-6xl text-red-400 group-hover:animate-bounce duration-200" />
+                  <AiFillInstagram className="text-6xl text-[#E9683D] group-hover:animate-bounce duration-200" />
                 </motion.a>
                 <motion.a
                   initial={{ opacity: 0, x: -50 }}
