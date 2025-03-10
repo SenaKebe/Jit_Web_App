@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Menu from "@/src/components/Menu";
 
 export default function DashboardLayout({
   children,
@@ -10,8 +11,11 @@ export default function DashboardLayout({
     <div className="h-screen flex">
       {/* left side  */}
 
-      <div className="w-[15%] md:w-[8%] lg:w-[16%] xl:w-[15%] bg-red-200 ">
-        <Link href="/" className="flex items-center justify-center gap-2">
+      <div className="w-[15%] md:w-[8%] lg:w-[16%] xl:w-[15%] bg-red-200 p-4 ">
+        <Link
+          href="/"
+          className="flex items-center justify-center lg:justify-start gap-2"
+        >
           <Image
             src="/kdus_gebriel_gibi_logo.png"
             alt="logo"
@@ -20,6 +24,7 @@ export default function DashboardLayout({
           />
           <span className="hidden lg:block">መንፈሳዊ ኮርስ</span>
         </Link>
+        <Menu />
       </div>
 
       {/* right side  */}
