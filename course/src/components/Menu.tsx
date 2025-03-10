@@ -101,14 +101,20 @@ const menuItems = [
 
 const Menu = () => {
   return (
-    <div>
+    <div className="mt-4 text-sm">
       {menuItems.map((i) => (
-        <div className="" key={i.title}>
-          <span>{i.title}</span>
+        <div className="flex flex-col gap-2" key={i.title}>
+          <span className="hidden lg:block text-black font-bold my-4">
+            {i.title}
+          </span>
           {i.items.map((item) => (
-            <Link href={item.href} key={item.label} className="flex">
-              <div>{item.icon}</div>
-              <span>{item.label}</span>
+            <Link
+              href={item.href}
+              key={item.label}
+              className="flex items-center justify-center lg:justify-start gap-4 text-[#083765] font-bold py-2"
+            >
+              <div className="text-2xl">{item.icon}</div>
+              <span className="hidden lg:block">{item.label}</span>
             </Link>
           ))}
         </div>
