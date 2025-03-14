@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+.react-calendar {
+  width: 100% !important;
+  border: none !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+.react-calendar__navigation__label__labelText {
+  font-weight: 900;
+  color: #083765 !important;
+}
+
+.react-calendar__navigation__arrow {
+  color: #083765 !important;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  color: #083765 !important;
+}
+.react-calendar__tile--active {
+  background-color: #083765 !important;
+  color: #fffb15 !important;
+  font: bold !important;
+}
