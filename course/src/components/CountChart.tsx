@@ -1,4 +1,5 @@
 "use client";
+import React, { PureComponent } from "react";
 import { RadialBarChart, RadialBar, ResponsiveContainer } from "recharts";
 import { IoIosMore } from "react-icons/io";
 import { MdOutlineGirl } from "react-icons/md";
@@ -31,7 +32,7 @@ const style = {
 
 const CountChart = () => {
   return (
-    <div className="bg-white rounded-xl w-full h-full p-4">
+    <div className="bg-gray-300 rounded-xl w-full h-full p-4">
       {/* TITLE  */}
       <div className="flex justify-between">
         <h1 className="text-[#083765] font-bold text-lg">Students</h1>
@@ -39,7 +40,7 @@ const CountChart = () => {
       </div>
 
       {/* CHART   */}
-      <div className="relative w-full h-[250px]">
+      <div className="relative w-full h-[300px]">
         <ResponsiveContainer width="100%" height="100%">
           <RadialBarChart
             cx="50%"
@@ -49,11 +50,11 @@ const CountChart = () => {
             barSize={32}
             data={data}
           >
-            {/* <RadialBar
+            <RadialBar
               label={{ position: "insideStart", fill: "#fff" }}
               background
               dataKey="count"
-            /> */}
+            />
           </RadialBarChart>
         </ResponsiveContainer>
         <div className="flex justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
