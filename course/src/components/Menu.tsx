@@ -15,6 +15,7 @@ import { CgProfile } from "react-icons/cg";
 import { IoMdSettings } from "react-icons/io";
 import { LuLogOut } from "react-icons/lu";
 import { TiTick } from "react-icons/ti";
+import { MdSubject } from "react-icons/md";
 import { role } from "../lib/data";
 
 const menuItems = [
@@ -30,67 +31,73 @@ const menuItems = [
       {
         icon: <GiTeacher />,
         label: "Teachers",
-        href: "/teachers",
+        href: "/list/teachers",
         visible: ["admin", "teacher"],
       },
       {
         icon: <PiStudentBold />,
         label: "Students",
-        href: "/students",
+        href: "/list/students",
         visible: ["admin", "teacher", "student"],
+      },
+      {
+        icon: <MdSubject />,
+        label: "Subjects",
+        href: "/list/subjects",
+        visible: ["admin"],
       },
       {
         icon: <SiGoogleclassroom />,
         label: "Classes",
-        href: "/classes",
+        href: "/list/classes",
         visible: ["admin", "teacher"],
       },
       {
         icon: <MdPlayLesson />,
         label: "Lessons",
-        href: "/lessons",
+        href: "/list/lessons",
         visible: ["admin", "teacher"],
       },
       {
         icon: <PiExamFill />,
         label: "Exams",
-        href: "/exams",
+        href: "/list/exams",
         visible: ["admin", "teacher", "student"],
       },
       {
         icon: <MdAssignment />,
         label: "Assignments",
-        href: "/assignments",
+        href: "/list/assignments",
         visible: ["admin", "teacher", "student"],
       },
       {
         icon: <TiTick />,
         label: "Results",
-        href: "/results",
+        href: "/list/results",
         visible: ["admin", "teacher", "student"],
       },
       {
         icon: <FaCheckDouble />,
         label: "Attendance",
-        href: "/attendance",
+        href: "/list/attendance",
         visible: ["admin", "teacher", "student"],
       },
       {
         icon: <MdEvent />,
         label: "Events",
-        href: "/events",
+        href: "/list/events",
         visible: ["admin", "teacher", "student"],
       },
       {
         icon: <MdMessage />,
         label: "Messages",
-        href: "/messages",
+        href: "/list/messages",
         visible: ["admin", "teacher", "student"],
       },
       {
         icon: <GrAnnounce />,
         label: "Announcements",
-        href: "/announcements",
+        href: "/list/announcements",
         visible: ["admin", "teacher", "student"],
       },
     ],
