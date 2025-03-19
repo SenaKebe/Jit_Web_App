@@ -25,7 +25,7 @@ const menuItems = [
       {
         icon: <IoIosHome />,
         label: "Home",
-        href: "/",
+        href: "/admin",
         visible: ["admin", "teacher", "student"],
       },
       {

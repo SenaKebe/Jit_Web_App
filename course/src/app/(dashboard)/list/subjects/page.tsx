@@ -9,6 +9,7 @@ import { MdDelete } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import { role, subjectsData } from "@/src/lib/data";
+import FormModal from "@/src/components/FormModal";
 
 type Subject = {
   id: number;
@@ -42,15 +43,11 @@ const SubjectListPage = () => {
       <td className="hidden md:table-cell">{item.teachers.join(",")}</td>
       <td>
         <div className="flex items-center gap-2">
-          <Link href={`/list/teachers/${item.id}`}>
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-[#FFFB15]">
-              <FaEdit className="text-[#083765] font-bold text-[16px]" />
-            </button>
-          </Link>
           {role === "admin" && (
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-red-400">
-              <MdDelete className="text-[#083765] font-bold text-[16px]" />
-            </button>
+            <>
+              <FormModal table="subject" type="update" data={item} />
+              <FormModal table="subject" type="delete" id={item.id} />
+            </>
           )}
         </div>
       </td>
@@ -73,11 +70,7 @@ const SubjectListPage = () => {
             <button className="w-8 h-8 flex items-center justify-center rounded-full bg-[#FFFB15]">
               <FaSortAmountDown className="text-[#083765] font-bold text-[16px]" />
             </button>
-            {role === "admin" && (
-              <button className="w-8 h-8 flex items-center justify-center rounded-full bg-[#FFFB15]">
-                <FaPlus className="text-[#083765] font-bold text-[16px]" />
-              </button>
-            )}
+            {role === "admin" && <FormModal table="subject" type="create" />}
           </div>
         </div>
       </div>

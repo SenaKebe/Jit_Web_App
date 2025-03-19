@@ -9,6 +9,7 @@ import { MdDelete } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import { role, teachersData } from "@/src/lib/data";
+import FormModal from "@/src/components/FormModal";
 
 type Teacher = {
   id: number;
@@ -103,9 +104,7 @@ const TeacherListPage = () => {
             </button>
           </Link>
           {role === "admin" && (
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-red-400">
-              <MdDelete className="text-[#083765] font-bold text-[16px]" />
-            </button>
+            <FormModal table="teacher" type="delete" id={item.id} />
           )}
         </div>
       </td>
@@ -128,11 +127,7 @@ const TeacherListPage = () => {
             <button className="w-8 h-8 flex items-center justify-center rounded-full bg-[#FFFB15]">
               <FaSortAmountDown className="text-[#083765] font-bold text-[16px]" />
             </button>
-            {role === "admin" && (
-              <button className="w-8 h-8 flex items-center justify-center rounded-full bg-[#FFFB15]">
-                <FaPlus className="text-[#083765] font-bold text-[16px]" />
-              </button>
-            )}
+            {role === "admin" && <FormModal table="teacher" type="create" />}
           </div>
         </div>
       </div>

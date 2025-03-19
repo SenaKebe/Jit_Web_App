@@ -9,6 +9,7 @@ import { MdDelete } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import { examsData, lessonsData, role } from "@/src/lib/data";
+import FormModal from "@/src/components/FormModal";
 
 type Exam = {
   id: number;
@@ -56,15 +57,11 @@ const ExamListPage = () => {
 
       <td>
         <div className="flex items-center gap-2">
-          <Link href={`/list/teachers/${item.id}`}>
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-[#FFFB15]">
-              <FaEdit className="text-[#083765] font-bold text-[16px]" />
-            </button>
-          </Link>
           {role === "admin" && (
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-red-400">
-              <MdDelete className="text-[#083765] font-bold text-[16px]" />
-            </button>
+            <>
+              <FormModal table="exam" type="update" data={item} />
+              <FormModal table="exam" type="delete" id={item.id} />
+            </>
           )}
         </div>
       </td>
@@ -87,11 +84,7 @@ const ExamListPage = () => {
             <button className="w-8 h-8 flex items-center justify-center rounded-full bg-[#FFFB15]">
               <FaSortAmountDown className="text-[#083765] font-bold text-[16px]" />
             </button>
-            {role === "admin" && (
-              <button className="w-8 h-8 flex items-center justify-center rounded-full bg-[#FFFB15]">
-                <FaPlus className="text-[#083765] font-bold text-[16px]" />
-              </button>
-            )}
+            {role === "admin" && <FormModal table="exam" type="create" />}
           </div>
         </div>
       </div>
