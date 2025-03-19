@@ -13,7 +13,7 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import Announcements from "@/src/components/Announcements";
 import Performance from "@/src/components/Performance";
 
-const SingleTeacherPage = () => {
+const SingleStudentPage = () => {
   return (
     <div className="flex-1 p-4 flex flex-col gap-4 xl:flex-row">
       {/* LEFT  */}
@@ -24,7 +24,7 @@ const SingleTeacherPage = () => {
           <div className="bg-[#083765] py-6 px-4 rounded-md flex-1 flex gap-4">
             <div className="w-1/3">
               <Image
-                src="https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src="https://images.pexels.com/photos/936126/pexels-photo-936126.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt=""
                 width={144}
                 height={144}
@@ -33,7 +33,9 @@ const SingleTeacherPage = () => {
             </div>
 
             <div className="w-2/3 flex flex-col justify-between gap-4">
-              <h1 className="text-xl font-bold text-[#FFFB15]">Yakob Dereje</h1>
+              <h1 className="text-xl font-bold text-[#FFFB15]">
+                Yared Berhanu
+              </h1>
               <p className="text-sm text-[#FFFB15]">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               </p>
@@ -83,8 +85,8 @@ const SingleTeacherPage = () => {
                 h-6
               />
               <div className="text-[#083765] font-bold">
-                <h1 className="text-xl font-semibold">90%</h1>
-                <span className="text-sm text-gray-400">Attendance</span>
+                <h1 className="text-xl font-semibold">4</h1>
+                <span className="text-sm text-gray-400">ኮርስ</span>
               </div>
             </div>
 
@@ -96,8 +98,8 @@ const SingleTeacherPage = () => {
                 h-6
               />
               <div className="text-[#083765] font-bold">
-                <h1 className="text-xl font-semibold">90%</h1>
-                <span className="text-sm text-gray-400">Attendance</span>
+                <h1 className="text-xl font-semibold">1</h1>
+                <span className="text-sm text-gray-400">JIT</span>
               </div>
             </div>
 
@@ -109,8 +111,8 @@ const SingleTeacherPage = () => {
                 h-6
               />
               <div className="text-[#083765] font-bold">
-                <h1 className="text-xl font-semibold">90%</h1>
-                <span className="text-sm text-gray-400">Attendance</span>
+                <h1 className="text-xl font-semibold">1 </h1>
+                <span className="text-sm text-gray-400">2ኛ ዓመት</span>
               </div>
             </div>
           </div>
@@ -118,7 +120,7 @@ const SingleTeacherPage = () => {
 
         {/* BOTTOM  */}
         <div className="mt-4 bg-white rounded-md p-4 h-full">
-          <h1 className="text-[#083765] font-bold">Teacher&apos;s Schedule</h1>
+          <h1 className="text-[#083765] font-bold">Student&apos;s Schedule</h1>
           <BigCalendar />
         </div>
       </div>
@@ -132,31 +134,31 @@ const SingleTeacherPage = () => {
               className="p-3 rounded-md bg-[#083765] text-[#FFFB15]"
               href="/"
             >
-              Teacher&apos;s Classes
+              Student&apos;s Lessons
             </Link>
             <Link
               className="p-3 rounded-md bg-[#083765] text-[#FFFB15]"
               href="/"
             >
-              Teacher&apos;s Students
+              Student&apos;s Teachers
             </Link>
             <Link
               className="p-3 rounded-md bg-[#083765] text-[#FFFB15]"
               href="/"
             >
-              Teacher&apos;s Lessons
-            </Link>
-            <Link
-              className="p-3 rounded-md bg-[#083765] text-[#FFFB15]"
-              href="/"
-            >
-              Teacher&apos;s Exams
+              Student&apos;s Exams
             </Link>
             <Link
               className="p-3 rounded-md bg-[#083765] text-[#FFFB15]"
               href="/"
             >
               Teacher&apos;s Assignments
+            </Link>
+            <Link
+              className="p-3 rounded-md bg-[#083765] text-[#FFFB15]"
+              href="/"
+            >
+              Student&apos;s Results
             </Link>
           </div>
         </div>
@@ -167,4 +169,4 @@ const SingleTeacherPage = () => {
   );
 };
 
-export default SingleTeacherPage;
+export default SingleStudentPage;
