@@ -168,7 +168,7 @@ const FormModal = ({
       </button>
       {open && (
         <div className="flex h-screen justify-center w-screen absolute items-center left-0 top-0 z-50">
-          <div className="bg-[#083765] p-4 rounded-md w-[90%] 2xl:w-[40%] lg:w-[60%] md:w-[70%] opacity-95 relative xl:w-[50%]">
+          <div className="bg-[#083765] p-4 rounded-md w-[90%] 2xl:w-[40%] lg:w-[60%] md:w-[70%] opacity-96 relative xl:w-[50%]">
             <Form />
             <div
               className="rounded-md absolute cursor-pointer right-4 top-4"
