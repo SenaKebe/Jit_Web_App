@@ -26,15 +26,33 @@ async function main() {
   }
 
   // CLASS
+  // for (let i = 1; i <= 6; i++) {
+  //   await prisma.class.create({
+  //     data: {
+  //       name: `${i}A`,
+  //       gradeId: i,
+  //       capacity: Math.floor(Math.random() * (20 - 15 + 1)) + 15,
+  //     },
+  //   });
+  // }
+
+  const teacher = await prisma.teacher.findFirst();
+  if (!teacher) {
+    throw new Error("No teacher found. Please seed teachers first.");
+  }
+
   for (let i = 1; i <= 6; i++) {
     await prisma.class.create({
       data: {
         name: `${i}A`,
         gradeId: i,
         capacity: Math.floor(Math.random() * (20 - 15 + 1)) + 15,
+        supervisorId: teacher ? teacher.id : null,
       },
     });
   }
+
+  console.log("Classes seeded successfully! ");
 
   // SUBJECT
   const subjectData = [
